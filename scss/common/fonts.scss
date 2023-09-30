@@ -1,17 +1,21 @@
 @font-face {
-    font-family: "bebasneuebold";
-    src: url("/assets/fonts/bebasneuebold.woff2");
-}
+    font-family: "Roboto-Bold";
+    src: url("../assets/fonts/Roboto-Bold.ttf");
+};
 
 @font-face {
-    font-family: "OpenSans-Bold";
-    src: url("/assets/fonts/OpenSans-Bold.ttf");
-}
+    font-family: 'Rubik-Bold';
+    src: url("../assets/fonts/Rubik-Bold.ttf");
+};
 @font-face {
-    font-family: "OpenSans-Regular";
-    src: url("/assets/fonts/OpenSans-Regular.ttf");
-}
+    font-family: "Rubik-Regular";
+    src: url("../assets/fonts/Rubik-Regular.ttf");
+};
 @font-face {
-    font-family: "OpenSans-ExtraBold";
-    src: url("/assets/fonts/OpenSans-ExtraBold.ttf");
+    font-family: "Rubik-Light";
+    src: url("../assets/fonts/Rubik-Light.ttf");
+};
+@font-face {
+    font-family: "Rubik-Medium";
+    src: url("../assets/fonts/Rubik-Medium.ttf");
 }

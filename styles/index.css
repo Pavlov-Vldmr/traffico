@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @font-face {
-  font-family: "bebasneuebold";
-  src: url("/assets/fonts/bebasneuebold.woff2");
+  font-family: "Roboto-Bold";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
 }
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url("/assets/fonts/OpenSans-Bold.ttf");
+  font-family: "Rubik-Bold";
+  src: url("../assets/fonts/Rubik-Bold.ttf");
 }
 @font-face {
-  font-family: "OpenSans-Regular";
-  src: url("/assets/fonts/OpenSans-Regular.ttf");
+  font-family: "Rubik-Regular";
+  src: url("../assets/fonts/Rubik-Regular.ttf");
 }
 @font-face {
-  font-family: "OpenSans-ExtraBold";
-  src: url("/assets/fonts/OpenSans-ExtraBold.ttf");
+  font-family: "Rubik-Light";
+  src: url("../assets/fonts/Rubik-Light.ttf");
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url("../assets/fonts/Rubik-Medium.ttf");
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,8 +68,8 @@ table {
 }
 
 body {
-  font-family: "OpenSans-Regular";
-  color: #000000;
+  font-family: "Rubik-Bold";
+  color: #402B2B;
   font-size: 1rem;
 }
 
@@ -120,7 +124,8 @@ body {
 }
 .test {
   border: 1px solid gray;
-  margin-top: 20px;
+  margin-top: 120px;
+  font-family: "Rubik-Bold";
 }
 
 /*# sourceMappingURL=index.css.map */

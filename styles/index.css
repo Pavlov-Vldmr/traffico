@@ -347,17 +347,14 @@ header .navbar__nav ul > li > a:hover {
   color: #EE4D47;
   font-size: 2rem;
 }
-.faq .accordion__item-header-header + .active {
-  box-shadow: inset 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
-}
 .faq .accordion__item-body {
   max-height: 0;
   overflow: hidden;
-  box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
   transition: ease-in-out 0.4s;
 }
 .faq .accordion__item-body-content {
   color: #402B2B;
+  margin-bottom: 50px;
   padding: 40px 127px 60px 35px;
   font-family: "Rubik-Light";
   font-size: 18px;
@@ -366,7 +363,7 @@ header .navbar__nav ul > li > a:hover {
   line-height: 30px;
   border-radius: 3px;
   background: #fff7f5;
-  box-shadow: inset 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
+  box-shadow: 0px -2px 40px 8px rgba(238, 76, 71, 0.067);
 }
 
 .top__article {

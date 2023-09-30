@@ -113,22 +113,18 @@
           //   right: 1rem;
         }
 
-        &-header + .active{
-            // box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
-            box-shadow: inset 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
-
-        }
       }
 
       &-body {
         max-height: 0;
         overflow: hidden;
-        box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
+        // box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
 
         // transition: max-height 0.2s ease-out;
         transition: ease-in-out .4s;
         &-content {
           color: $text-color;
+            margin-bottom: 50px;
           padding: 40px 127px 60px 35px;
           font-family: "Rubik-Light";
           font-size: 18px;
@@ -138,7 +134,9 @@
           //   height: auto;
           border-radius: 3px;
           background: #fff7f5;
-          box-shadow: inset 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
+        //   box-shadow: inset 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
+        //   box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
+        box-shadow: 0px -2px 40px 8px rgba(238, 76, 71, 0.067);
         }
       }
     }

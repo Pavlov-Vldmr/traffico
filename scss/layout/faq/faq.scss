@@ -44,8 +44,6 @@
 
     .extra {
       .accordion__item-header {
-        // opacity: 0.2;
-
         background-color: #ed4d472c;
         display: flex;
         justify-content: flex-end;
@@ -53,24 +51,21 @@
         color: $color_primary;
         letter-spacing: 0.9px;
 
-        &::after{
-            margin-left: 170px;
+        &::after {
+          margin-left: 170px;
         }
       }
 
-      .accordion__item-body{
+      .accordion__item-body {
         background-color: red;
-        &-content{
-            a{
-                text-decoration: none;
-                color: $color_primary;
-               @extend %text-uppercase;
-
-    
-            }
+        &-content {
+          a {
+            text-decoration: none;
+            color: $color_primary;
+            @extend %text-uppercase;
           }
+        }
       }
-      
     }
 
     &__item {
@@ -91,52 +86,41 @@
         font-style: normal;
         font-weight: 500;
         line-height: 30px;
-        box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
-        transition: ease-in .4s;
+        box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
+        transition: ease-in 0.4s;
 
-        &.active{
-            
-            border-radius: 10px 10px 0 0;
+        &.active {
+          border-radius: 10px 10px 0 0;
         }
 
         &.active::after {
           color: $color_primary;
           content: "\2212";
-          
         }
 
         &::after {
           content: "\002B";
           color: $color_primary;
           font-size: 2rem;
-          //   position: absolute;
-          //   right: 1rem;
         }
-
       }
 
       &-body {
         max-height: 0;
         overflow: hidden;
-        // box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
-
-        // transition: max-height 0.2s ease-out;
-        transition: ease-in-out .4s;
+        transition: ease-in-out 0.4s;
         &-content {
           color: $text-color;
-            margin-bottom: 50px;
+          margin-bottom: 50px;
           padding: 40px 127px 60px 35px;
           font-family: "Rubik-Light";
           font-size: 18px;
           font-style: normal;
           font-weight: 300;
           line-height: 30px;
-          //   height: auto;
           border-radius: 3px;
           background: #fff7f5;
-        //   box-shadow: inset 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
-        //   box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
-        box-shadow: 0px -2px 40px 8px rgba(238, 76, 71, 0.067);
+          box-shadow: 0px -2px 40px 8px rgba(238, 76, 71, 0.067);
         }
       }
     }

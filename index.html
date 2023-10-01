@@ -6,8 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./assets/icons/favicon.ico" rel="icon" type="image/x-icon" />
+
   <link rel="stylesheet" href="./styles/index.css" />
-  <script src="./scrypt.js" defer></script>
+  <link rel="stylesheet" href="./js/owl-carousel/owl.carousel.css">
+
+
+  <script src="./js/scrypt.js" defer></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/owl-carousel/owl.carousel.min.js"></script>
+
 
   <title>Clear scss project</title>
   <!-- covmpilation "scss" to 'css' read './readme' -->
@@ -206,9 +213,108 @@
 
   </section>
 
-  <div class="container test">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quos dolor iure at nobis nihil aliquid quod, repellendus voluptate? Nihil architecto delectus aliquam quos nam saepe hic, sit molestiae est.
-  </div>
+  <section class="container testi">
+    <div class="carousel-nav">
+      <h3>About us</h3>
+      <div class="carousel-nav__btns">
+        <button class="customPrevBtn"></button>
+        <button class="customNextBtn"></button>
+      </div>
+    </div>
+    
+    <div class="testi__carousel">
+      <h2 class="testi__carousel-title">Our Awesome Clients</h2>
+   
+      <div class="owl-carousel">
+        <div class="item">
+        <p class="item-text">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+        <div class="item__profile">
+          <img class="item__profile-photo" src="./assets/images/users/user1.jpg" alt="Isak Pettersson">
+          <span class="item__profile-name">Isak Pettersson</span>
+        </div>
+        </div>
+        <div class="item">
+          <p class="item-text">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+          <div class="item__profile">
+            <img class="item__profile-photo" src="./assets/images/users/user1.jpg" alt="Isak Pettersson">
+            <span class="item__profile-name">Isak Pettersson</span>
+          </div>
+        </div>
+      <div class="item">
+        <p class="item-text">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+        <div class="item__profile">
+          <img class="item__profile-photo" src="./assets/images/users/user1.jpg" alt="Isak Pettersson">
+          <span class="item__profile-name">Isak Pettersson</span>
+        </div>
+      </div>
+      <div class="item">
+        <p class="item-text">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+        <div class="item__profile">
+          <img class="item__profile-photo" src="./assets/images/users/user1.jpg" alt="Isak Pettersson">
+          <span class="item__profile-name">Isak Pettersson</span>
+        </div>
+      </div>
+      <div class="item">
+        <p class="item-text">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+        <div class="item__profile">
+          <img class="item__profile-photo" src="./assets/images/users/user1.jpg" alt="Isak Pettersson">
+          <span class="item__profile-name">Isak Pettersson</span>
+        </div>
+      </div>
+      <div class="item">
+        <p class="item-text">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+        <div class="item__profile">
+          <img class="item__profile-photo" src="./assets/images/users/user1.jpg" alt="Isak Pettersson">
+          <span class="item__profile-name">Isak Pettersson</span>
+        </div>
+      </div>
+      </div>  
+    </div>
+  </section>
+
+
+  <section class="contact">
+    <img class="scene scene__track-footer" src="./assets/images/treckmobil-footer.svg" alt="">
+    <img class="contact-bg" src="./assets/images/contact-bg.svg">
+    <div class="container">
+      <div class="contact__form">
+        <p class="contact__form-text">We provide traffic management consultants so you get started quickly, contact us for a quote today!</p>
+        <form action="">
+          <span class="input-title">Name</span>
+          <input type="text" name="name" placeholder="Your name">
+          <span class="input-title">Email address</span>
+          <input type="text" name="email" id="" placeholder="Your email address">
+          <a class="cta cta-intro" href=""><span>get started</span></a>
+        </form>
+      </div>
+      <div class="contact__navbar">
+        <a class="navbar-logo d-flex" href="#home">
+          <img src="./assets/images/logo.svg" alt="Traffico"/>
+        </a>
+        <nav class="contact__navbar-nav" id="nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#howto">How To</a></li>
+            <li><a href="#faq">Faqs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+
+  
+
+  </section>
+
+  <footer class="footer container">
+    <p>Copyright &copy; 2019</p>
+    <ul>
+      <li><a href="#"><img src="./assets/icons/socials/facebook.svg" alt="facebook"></a></li>
+      <li><a href="#"><img src="./assets/icons/socials/twitter.svg" alt="twitter"></a></li>
+      <li><a href="#"><img src="./assets/icons/socials/instagram.svg" alt="instagram"></a></li>
+    </ul>
+  </footer>
+
 </body>
 
 <!-- jquery -->

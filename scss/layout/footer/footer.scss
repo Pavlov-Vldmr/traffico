@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 92px;
+  // padding-right: 95px;
+
+  p {
+    color: $text-color;
+    font-family: "Rubik-Light";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  ul {
+    margin-right: 95px;
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+    li > a > img {
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

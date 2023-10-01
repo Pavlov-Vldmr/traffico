@@ -5,6 +5,27 @@ body {
   font-size: 1rem;
   background-color: #FEF8F5;
 }
+
+/* width */
+::-webkit-scrollbar {
+  // width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color_primary;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color_primary;
+}
 h1 {
   color: #fff;
   font-family: "DMSerifDisplay-Regular";

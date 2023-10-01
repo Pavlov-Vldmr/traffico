@@ -1,0 +1,82 @@
+.testi {
+  margin-top: 300px;
+
+  .carousel-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__btns {
+      button {
+        width: 30px;
+        height: 15px;
+        border: none;
+        margin-left: 30px;
+        cursor: pointer;
+      }
+      .customPrevBtn {
+        background: url(../assets/icons/right.svg);
+        background-repeat: no-repeat;
+      }
+      .customNextBtn {
+        background: url(../assets/icons/left.svg);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__carousel {
+    display: flex;
+    flex-direction: row;
+
+    &-title {
+      min-width: 350px;
+    }
+    .owl-carousel {
+      // padding: 50px;
+      width: calc(100% - 150px);
+    }
+  }
+
+  .item {
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 320px;
+    height: 260px;
+    padding: 60px 52px 40px 48px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px 0px rgba(238, 76, 71, 0.1);
+
+    &-text {
+      color: $text_color;
+      font-family: "Rubik-Regular";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 30px;
+    }
+    &__profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 60px;
+
+      &-photo {
+        width: 60px !important;
+        height: 60px;
+      }
+      &-name {
+        margin-left: 20px;
+        color: $text_color;
+        font-family: "Roboto-Bold";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+      }
+    }
+  }
+}

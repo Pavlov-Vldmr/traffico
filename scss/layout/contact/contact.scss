@@ -1,0 +1,117 @@
+.contact-bg{
+    background-color: #0F264C;
+    border-radius: 0 100px 0 0 ;
+    position: absolute;
+    height: 660px;
+    margin-top: 278px;
+    z-index: -1;
+    left: 0;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &-text {
+    font-family: "Rubik-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 160px;
+    padding: 10px 0 10px 40px;
+   color: white;
+    border-left: 10px solid $color_primary;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  form {
+    margin-right: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 52px 75px 52px 75px;
+    background-color: gray;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
+
+
+    .input-title {
+      color: $text-color;
+      font-family: "Rubik-Light";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+    .input-title:last-of-type {
+      margin-top: 20px;
+    }
+
+    input {
+      width: 320px;
+      height: 44px;
+      border-radius: 5px;
+      border: 1px solid rgba(238, 77, 71, 0.5);
+      background: #fff;
+      //   padding-left: 40px;
+      padding: 8px 40px;
+      &:focus {
+        box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.2);
+      }
+    }
+    input::placeholder {
+      color: $text-color;
+      font-family: "Rubik-Light";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 40px;
+    }
+    
+    input[type="text"] {
+      
+      font-family: "Rubik-Bold";
+      font-size: 18px;
+    }
+
+    .cta {
+      margin-top: 30px;
+      color: white;
+    }    
+
+  }
+}
+
+.contact__navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 170px 95px 120px 0;
+
+    &-nav{
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+
+            li>a{
+                text-decoration: none;
+                color: white;
+                @extend %text-uppercase;
+                font-family: 'Rubik-regular';
+                font-size: 16px;
+                letter-spacing: .8px;
+                
+            }
+        }
+    }
+}

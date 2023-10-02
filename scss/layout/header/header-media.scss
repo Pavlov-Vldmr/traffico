@@ -1,11 +1,21 @@
-@include mq(laptop) {
-  
-}
+@media (max-width: 769px) {
+  header {
+    .navbar {
+      align-items: flex-start;
 
-@include mq(tablet) {
-  
-}
+      &__nav {
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          align-items: flex-end;
 
-@include mq(mobile) {
-  
+          gap: 20px;
+          li a.cta {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

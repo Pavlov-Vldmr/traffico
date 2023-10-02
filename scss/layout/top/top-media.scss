@@ -1,11 +1,7 @@
-@include mq(laptop) {
-  
-}
-
-@include mq(tablet) {
-  
-}
-
-@include mq(mobile) {
-  
-}
+@media (max-width: 769px) {
+    .top__article{
+        width: auto;
+        font-size: 60px;
+        margin-top: 0;
+    }
+  }

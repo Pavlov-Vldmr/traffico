@@ -16,25 +16,27 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
-    // items: 3,
+    items: 3,
     loop: true,
     margin: 20,
-    autoWidth:true,
+    responsiveClass: true,
+    autoWidth: true,
     nav: true,
-    responsive : {
-      // breakpoint from 0 up
-      0 : {
-          items: 1,
+    responsive: {
+      1: {
+        
+        items: 1,
+        center:true,
       },
-      1300 : {
-          items: 2,
-      },
-      1920 : {
-        items: 3,
-      }
+      768: {
+        margin: 20,
 
-  }
-    // тут настройки плагина
+        items: 2,
+      },
+      1920: {
+        items: 3,
+      },
+    },
   });
 
   var owl = $(".owl-carousel");

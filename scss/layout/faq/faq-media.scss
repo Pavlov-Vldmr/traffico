@@ -1,11 +1,24 @@
-@include mq(laptop) {
-  
-}
+@media (max-width: 769px) {
+    .faq{ 
 
-@include mq(tablet) {
-  
-}
+        &__bg{
+            height: 2000px;
+        }
+        &__title-block{
 
-@include mq(mobile) {
-  
-}
+            &-text{
+                margin-left: 0;
+                margin-bottom: 60px;
+            }
+            flex-direction: column;
+            &-image{
+                width: 100%;
+                left: 0px ;
+                margin-bottom: 60px;
+
+            }
+        }
+
+        
+    }
+  }

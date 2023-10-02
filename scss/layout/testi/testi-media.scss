@@ -1,11 +1,37 @@
-@include mq(laptop) {
-  
+
+
+@media (max-width: 769px) {
+  .testi{
+    flex-direction: column;
+
+    &__carousel{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__carousel {
+      .carousel {
+        width: 100%;
+      }
+
+      .owl-carousel {
+        
+        .owl-stage-outer{
+          padding-bottom: 50px;
+
+        // width: 100%;
+        }
+
+      }
+    }
+  }
+
 }
 
-@include mq(tablet) {
-  
-}
 
-@include mq(mobile) {
-  
+@media (min-width: 1600px) {
+ 
+  .owl-stage-outer{
+    // width: 130%;
+  }
 }

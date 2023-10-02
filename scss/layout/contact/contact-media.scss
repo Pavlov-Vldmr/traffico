@@ -1,11 +1,86 @@
-@include mq(laptop) {
-  
-}
+@media (max-width: 769px) {
+ 
+    // .contact__container{
+    //     display: flex;
+    //         flex-direction: column;
+    // }
 
-@include mq(tablet) {
-  
-}
+    .contact__form{
+        
+    }
+    .contact{
 
-@include mq(mobile) {
-  
-}
+        &-bg{
+            height: 100%;
+        }
+      
+        &__container{
+          
+        }
+      
+        &__form{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        
+          &-text {
+          }
+        
+          form {
+            margin: 0;
+        
+            .input-title {
+
+            }
+            .input-title:last-of-type {
+             
+            }
+        
+            input {
+              
+              &:focus {
+                
+              }
+            }
+            input::placeholder {
+
+            }
+            
+            input[type="text"] {
+
+            }
+        
+            .cta {
+
+            }    
+        
+          }
+        }
+      
+        &__navbar{
+            margin-right: 0;
+      
+          &-nav{
+      
+              ul{   gap: 10px;
+                  li>a{
+
+                  }
+              }
+          }
+        }
+      }
+      
+      .scene__track-footer{
+        position: absolute;
+      }
+      
+  }
+
+@media (min-width: 1439px) {
+ 
+    .contact-bg{
+       
+        height: 85%;
+    }
+  }

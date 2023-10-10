@@ -1,86 +1,84 @@
 @media (max-width: 769px) {
- 
-    // .contact__container{
-    //     display: flex;
-    //         flex-direction: column;
-    // }
-
-    .contact__form{
-        
+  .contact {
+    &-bg {
+      height: 100%;
     }
-    .contact{
 
-        &-bg{
-            height: 100%;
+    &__form {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      form {
+        margin: 0;
+        .input-title {
         }
-      
-        &__container{
-          
+        .input-title:last-of-type {
         }
-      
-        &__form{
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        
-          &-text {
-          }
-        
-          form {
-            margin: 0;
-        
-            .input-title {
 
-            }
-            .input-title:last-of-type {
-             
-            }
-        
-            input {
-              
-              &:focus {
-                
-              }
-            }
-            input::placeholder {
-
-            }
-            
-            input[type="text"] {
-
-            }
-        
-            .cta {
-
-            }    
-        
+        input {
+          &:focus {
           }
         }
-      
-        &__navbar{
-            margin-right: 0;
-      
-          &-nav{
-      
-              ul{   gap: 10px;
-                  li>a{
+        input::placeholder {
+        }
 
-                  }
-              }
+        input[type="text"] {
+        }
+
+        .cta {
+        }
+      }
+    }
+
+    &__navbar {
+      margin-right: 0;
+
+      &-nav {
+        ul {
+          gap: 10px;
+          li > a {
           }
         }
       }
-      
-      .scene__track-footer{
-        position: absolute;
-      }
-      
+    }
   }
+
+  .scene__track-footer {
+    position: absolute;
+  }
+}
 
 @media (min-width: 1439px) {
- 
-    .contact-bg{
-       
-        height: 85%;
-    }
+  .contact-bg {
+    height: 85%;
   }
+}
+@media (max-width: 450px) {
+  .contact{
+   
+    &__form{
+      &-text{
+        width: auto;
+        padding: 5px 0 5px 15px;
+      }
+      form{
+        margin: 10px;
+        padding: 10px 20px 30px 20px;
+
+        input{
+          width: 180px;
+          padding: 8px 20px;
+        }
+      }
+    }
+
+    &__navbar{
+      a{
+        margin-bottom: 10px;
+      }
+      flex-direction: column;
+    }
+  
+}
+}

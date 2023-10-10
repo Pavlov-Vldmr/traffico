@@ -31,10 +31,11 @@
     background-color: #fdede8;
   }
   .accordion-container {
+    gap: 20px;
+
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    gap: 20px;
   }
   .accordion {
     gap: 10px;
@@ -69,7 +70,7 @@
     }
 
     &__item {
-      width: 550px;
+      max-width: 550px;
       //   background-color: gray;
 
       &-header {

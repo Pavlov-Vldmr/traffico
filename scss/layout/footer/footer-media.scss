@@ -1,11 +1,10 @@
-@include mq(laptop) {
-  
-}
-
-@include mq(tablet) {
-  
-}
-
-@include mq(mobile) {
-  
+@media(max-width: 450px){
+    .footer {
+        flex-direction: column-reverse;      
+        ul {
+            margin: auto;
+            margin-bottom: 50px;
+        }
+      }
+      
 }

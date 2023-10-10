@@ -28,15 +28,11 @@
 
 @media (max-width: 376px) {
   .testi{
-    .carousel-nav {
-      
+    .carousel-nav {   
       margin: 0;
-      // margin-left: 0;
-      // margin-right: 0;
       h3{
         margin-bottom: 0;
       }
-      
     }
 
 
@@ -46,7 +42,6 @@
       &-title{
         text-align: center;
         min-width: 320px;
-        // margin-left: 20px;
       }
       .item{
         width: 280px;
@@ -63,9 +58,6 @@
       }
       
       .owl-item{
-        // margin-left: 0px;
-        // margin-right: 20px;
-        // background-color: red;
         left: -10px;
       }
     }

@@ -2,7 +2,6 @@
   header {
     padding: 20px 0 10px 0;
     .navbar {
-
       align-items: flex-start;
 
       &__logo img{
@@ -10,15 +9,10 @@
         margin-left: 10px;
       }
       &__nav {
-        // position: absolute;
-        // transform: translate(40%,0);
         ul {
-          display: flex;
-          justify-content: flex-end;
-          flex-direction: column;
-          align-items: flex-end;
-
+          @include flex-fd-w-ac-jc-ai($fd: column, $jc: flex-end, $ai: flex-end);
           gap: 20px;
+
           li a.cta {
             display: none;
           }
@@ -33,13 +27,10 @@
   header {
 
     .navbar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-fd-w-ac-jc-ai($fd: column, $ai: center);
 
       &__logo{
-        display: flex;
-        align-items: center;
+        @include flex-fd-w-ac-jc-ai($ai: center);
 
         img{
           margin-bottom: 20px;
@@ -49,14 +40,12 @@
       }
       
       &__nav {
-        display: flex;
-       align-items: center;
+        @include flex-fd-w-ac-jc-ai($ai: center);
+
         ul {
           margin: auto;
           flex-direction: row;
-          li a.cta {
-        
-          }
+          
         }
       }
       

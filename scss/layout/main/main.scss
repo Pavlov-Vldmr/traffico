@@ -1,28 +1,18 @@
 .text {
+  @include font-size-weight-lh("Rubik-light", 18px, $lh: 40px);
   color: $text-color;
-  font-family: "Rubik-light";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 40px; /* 222.222% */
   max-width: 470px;
 
   &-important {
-    font-family: "Rubik-Medium";
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
+    @include font-size-weight-lh("Rubik-Medium", 24px, $lh: 36px);
+    @include flex-fd-w-ac-jc-ai( $ai: center);
+    margin-top: 70px;
     padding: 30px 55px;
-    // text-align: center;
     width: 460px;
     height: 100px;
-
     background-color: #fcddd458;
     border-left: 10px solid $color_primary;
     border-radius: 5px 0px 0px 5px;
-    margin-top: 70px;
   }
 }
 
@@ -30,8 +20,6 @@
   margin-top: 180px;
   &__about {
     display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
     &-image {
       position: relative;
       top: -50px;
@@ -40,12 +28,8 @@
   }
 
   &__howto {
+    @include flex-fd-w-ac-jc-ai($fd: row-reverse, $jc: center, $ai: center);
     margin-top: 70px;
-    justify-content: center;
-    display: flex;
-    // flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: center;
 
     &-image {
       position: relative;

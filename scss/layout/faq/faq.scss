@@ -1,11 +1,8 @@
 .faq {
   margin-top: 80px;
   &__title-block {
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    @include flex-fd-w-ac-jc-ai($jc: center, $ai: center);
     padding-top: 160px;
-    // width: 500px;
 
     &-text {
       min-width: 550px;
@@ -15,39 +12,30 @@
       position: relative;
       left: -80px;
       top: -30px;
-      align-items: center;
     }
   }
 
   &__bg {
-    position: absolute;
-    z-index: -1;
+    @include z-index(-1);
     right: 0;
     border-radius: 200px 0 0 0;
-    position: absolute;
-    z-index: -1;
     height: 1500px;
     width: 1170px;
     background-color: #fdede8;
   }
   .accordion-container {
+    @include flex-fd-w-ac-jc-ai($w: wrap);
     gap: 20px;
-
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
   }
   .accordion {
     gap: 10px;
-    display: flex;
-    flex-direction: column;
+    @include flex-fd-w-ac-jc-ai($fd: column);
     box-sizing: border-box;
 
     .extra {
       .accordion__item-header {
         background-color: #ed4d472c;
-        display: flex;
-        justify-content: flex-end;
+        @include flex-fd-w-ac-jc-ai($jc: flex-end);
         @extend %text-uppercase;
         color: $color_primary;
         letter-spacing: 0.9px;
@@ -71,22 +59,15 @@
 
     &__item {
       max-width: 550px;
-      //   background-color: gray;
 
       &-header {
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-fd-w-ac-jc-ai($jc: space-between, $ai: space-between);
+        @include font-size-weight-lh("Rubik-Medium", 18px, $lh: 30px);
         padding: 25px 35px 25px 35px;
-        font-family: "Rubik-Medium";
         color: $text-color;
         background-color: white;
         border-radius: 10px;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
         box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
         transition: ease-in 0.4s;
 
@@ -111,14 +92,10 @@
         overflow: hidden;
         transition: ease-in-out 0.4s;
         &-content {
+          @include font-size-weight-lh("Rubik-Light", 18px, $lh: 30px);
           color: $text-color;
           margin-bottom: 50px;
           padding: 40px 127px 60px 35px;
-          font-family: "Rubik-Light";
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 30px;
           border-radius: 3px;
           background: #fff7f5;
           box-shadow: 0px -2px 40px 8px rgba(238, 76, 71, 0.067);

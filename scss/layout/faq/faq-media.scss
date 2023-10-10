@@ -33,8 +33,6 @@
     }
     &__title-block {
       &-text {
-        // margin-left: 40px;
-        // margin-right: 40px;
         margin-right: 0;
 
         margin-bottom: 60px;
@@ -57,14 +55,12 @@
     .faq{
         &__bg{
             height: 2300px;
-
         }
 
         .accordion-container{
             display: block;
             .accordion:last-child{
                 margin-top: 10px;
-                // display: block;
             }
         }
     }

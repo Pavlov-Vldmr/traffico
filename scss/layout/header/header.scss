@@ -3,27 +3,21 @@ header {
   padding-top: 40px;
 
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    @include flex-fd-w-ac-jc-ai( $jc: space-between, $ai: center);
 
     &__nav {
       ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex-fd-w-ac-jc-ai($w: wrap, $ai: baseline);
         gap: 100px;
-        align-items: baseline;
+   
       }
 
       ul > li > a {
+        @include font-size-weight-lh("Rubik-Bold", 16px);
         @extend %text-uppercase;
         text-decoration: none;
         color: white;
-        font-family: "Rubik-Bold";
         transition: ease-in-out 0.3s;
-        font-size: 16px;
         letter-spacing: .8px;
 
         &:hover {

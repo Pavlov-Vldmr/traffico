@@ -36,14 +36,13 @@
   .main {
     margin-top: 180px;
     &__about {
+      @include flex-fd-w-ac-jc-ai( $fd: column, $ai: center);
       margin: auto;
       margin-top: 300px;
-      flex-direction: column;
-      align-items: center;
+
       &-text{
-        
         margin: auto;
-        // width: 80%;
+
         .text-important{
             width: auto;
             height: auto;
@@ -51,8 +50,7 @@
             font-size: 1.2em;
         }
       }
-      display: flex;
-      flex-direction: column;
+
       &-image {
         width: 70%;
         margin-top: 80px;
@@ -62,23 +60,16 @@
   
     &__howto {
       margin: auto;
-
       flex-direction: column;
       &-text{
           margin: auto;
           margin-top: 50px;
-          // width: 80%;
-        h3{
-          // margin: auto;
-        }
-        .text{
-          // margin: auto;
-        }
+
+
         
       }
       &-image {
         width: 90%;
-
         position: relative;
         top: -40px;
         left: 0;

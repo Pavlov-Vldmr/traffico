@@ -4,8 +4,7 @@
   // padding-top: 60px;
 
   &-bg{
-    position: absolute;
-    z-index: -2;
+    @include z-index(-2);
     bottom: 0;
     left: 0;
   }
@@ -15,21 +14,13 @@
   }
 
   &__form{
-
+    @include flex-fd-w-ac-jc-ai( $jc: space-between);
     padding-top: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   
     &-text {
-      font-family: "Rubik-Regular";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 30px;
+      @include font-size-weight-lh("Rubik-Regular", 20px, $lh: 30px);
+      @include flex-fd-w-ac-jc-ai($ai: center);
       margin-top: 210px;
-      display: flex;
-      align-items: center;
       width: 360px;
       height: 160px;
       padding: 10px 0 10px 40px;
@@ -39,11 +30,8 @@
     }
   
     form {
+      @include flex-fd-w-ac-jc-ai($fd: column, $jc: center, $ai: flex-start);
       margin-right: 95px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
       padding: 52px 75px 52px 75px;
       background-color: gray;
       border-radius: 10px;
@@ -54,11 +42,7 @@
   
       .input-title {
         color: $text-color;
-        font-family: "Rubik-Light";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 40px;
+        @include font-size-weight-lh("Rubik-Light", 16px, $lh: 40px);
         margin-bottom: 10px;
       }
       .input-title:last-of-type {
@@ -71,7 +55,6 @@
         border-radius: 5px;
         border: 1px solid rgba(238, 77, 71, 0.5);
         background: #fff;
-        //   padding-left: 40px;
         padding: 8px 40px;
         &:focus {
           box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.2);
@@ -79,17 +62,11 @@
       }
       input::placeholder {
         color: $text-color;
-        font-family: "Rubik-Light";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 40px;
+        @include font-size-weight-lh("Rubik-Light", 18px, 300, 40px);
       }
       
       input[type="text"] {
-        
-        font-family: "Rubik-Bold";
-        font-size: 18px;
+        @include font-size-weight-lh("Rubik-bold", 18px);
       }
   
       .cta {
@@ -101,25 +78,20 @@
   }
 
   &__navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-fd-w-ac-jc-ai($jc: space-between, $ai: center);
     margin: 170px 95px 0px 0;
 
     &-nav{
 
         ul{
             display: flex;
-            flex-direction: row;
             gap: 100px;
 
             li>a{
                 text-decoration: none;
                 color: white;
                 @extend %text-uppercase;
-                font-family: 'Rubik-regular';
-                font-size: 16px;
+                @include font-size-weight-lh("Rubik-regular", 16px);
                 letter-spacing: .8px;
             }
         }

@@ -1,6 +1,8 @@
-@mixin font-size-weight($size, $weight){
+@mixin font-size-weight-lh( $family, $size: 1rem, $weight: normal, $lh: normal){
+    font-family: $family;
     font-size: $size;
     font-weight: $weight;
+    line-height: $lh;
 }
 
 @mixin transform-scale($scale){
@@ -10,4 +12,13 @@
 @mixin z-index($index){
     @extend %pos-absolute;
     z-index: $index;
+}
+
+@mixin flex-fd-w-ac-jc-ai($flex: flex, $fd:row, $w: nowrap, $ac: normal, $jc: normal, $ai: normal){
+    display: $flex;
+    flex-direction: $fd;
+    flex-wrap: $w;
+    align-content: $ac;
+    justify-content: $jc;
+    align-items: $ai;
 }

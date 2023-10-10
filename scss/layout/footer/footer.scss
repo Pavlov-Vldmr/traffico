@@ -1,25 +1,16 @@
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-fd-w-ac-jc-ai( $fd: row, $jc: space-between, $ai: center);
   margin-top: 50px;
   margin-bottom: 92px;
-  // padding-right: 95px;
 
   p {
     color: $text-color;
-    font-family: "Rubik-Light";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 30px;
+    @include font-size-weight-lh("Rubik-Light", 16px, $lh: 30px);
   }
 
   ul {
+    @include flex-fd-w-ac-jc-ai();
     margin-right: 95px;
-    display: flex;
-    flex-direction: row;
     gap: 31px;
     li > a > img {
       background-repeat: no-repeat;

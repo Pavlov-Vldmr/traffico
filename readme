@@ -1,6 +1,2 @@
 sass --watch scss/index.scss:styles/index.css
 
-breackpoints
-laptop   1025  -- 1367
-tablet   768   -- 1024
-phone       0  -- 767

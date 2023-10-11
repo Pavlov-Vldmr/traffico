@@ -116,9 +116,14 @@ body {
 }
 
 ._anim-item {
-  transform: translate(-20%, 0);
   opacity: 0;
   transition: all 1s ease 0s;
+}
+._anim-item-left {
+  transform: translate(-20%, 0);
+}
+._anim-item-right {
+  transform: translate(20%, 0);
 }
 
 ._active {
@@ -128,7 +133,7 @@ body {
 
 h1 {
   font-family: "DMSerifDisplay-Regular";
-  font-size: 100px;
+  font-size: 6.25rem;
   font-weight: normal;
   line-height: 100%;
   color: #fff;
@@ -294,6 +299,9 @@ h3 {
   .container {
     width: auto;
   }
+  h1 {
+    font-size: 2.4rem;
+  }
   h2 {
     font-size: 2.4rem;
   }
@@ -301,8 +309,7 @@ h3 {
     font-size: 1.25rem;
   }
   .scene__bg {
-    width: 100%;
-    height: 100%;
+    height: 700px;
   }
   .scene__track {
     display: none;
@@ -362,7 +369,7 @@ header .navbar__nav ul > li > a:hover {
     align-items: flex-end;
     gap: 20px;
   }
-  header .navbar__nav ul li a.cta {
+  header .navbar__nav ul li:last-child {
     display: none;
   }
 }
@@ -717,10 +724,18 @@ header .navbar__nav ul > li > a:hover {
 }
 
 @media (max-width: 769px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: normal;
+    align-items: center;
+  }
   .top__article {
     width: auto;
-    font-size: 60px;
     margin-top: 70px;
+    text-align: center;
   }
 }
 .text {

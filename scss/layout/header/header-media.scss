@@ -13,7 +13,7 @@
           @include flex-fd-w-ac-jc-ai($fd: column, $jc: flex-end, $ai: flex-end);
           gap: 20px;
 
-          li a.cta {
+          li:last-child {
             display: none;
           }
         }

@@ -696,6 +696,11 @@ header .navbar__nav ul > li > a:hover {
   .testi .carousel-nav {
     margin: 0;
   }
+  .testi .carousel-nav__btns {
+    height: 40px;
+    height: 40px;
+    align-items: center;
+  }
   .testi .carousel-nav h3 {
     margin-bottom: 0;
   }
@@ -1043,10 +1048,11 @@ header .navbar__nav ul > li > a:hover {
   }
   .contact__form form {
     margin: 10px;
+    min-width: 320px;
     padding: 10px 20px 30px 20px;
   }
   .contact__form form input {
-    width: 180px;
+    width: calc(100% - 40px);
     padding: 8px 20px;
   }
   .contact__navbar {
